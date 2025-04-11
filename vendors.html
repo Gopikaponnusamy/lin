@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vendors - LetsGala</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <section class="section">
+    <h2 class="section-title">Featured Vendors</h2>
+    <div class="vendor-grid">
+      <div class="vendor-card">
+        <img src="{{ url_for('static', filename='images/vendor.jpg') }}" alt="Vendor">
+        <h3>Hilton Grand Ballroom</h3>
+        <p>Exquisite décor, lighting and floral design.</p>
+      </div>
+      <div class="vendor-card">
+        <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6" alt="Vendor">
+        <h3>Elegant Creations</h3>
+        <p>Premium event decoration and management services.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

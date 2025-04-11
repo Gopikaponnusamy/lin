@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Venues - LetsGala</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <section class="section">
+    <h2 class="section-title">Explore Fast Booking Venues</h2>
+    <div class="venue-grid">
+      <div class="venue-card">
+        <img src="{{ url_for('static', filename='images/venue1.jpg') }}" alt="Venue">
+        <h3>Wedding Venues</h3>
+      </div>
+      <div class="venue-card">
+        <img src="https://images.unsplash.com/photo-1563720229286-dbd63e4166d5" alt="Birthday">
+        <h3>Birthday Venues</h3>
+      </div>
+      <div class="venue-card">
+        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095" alt="Baby Shower">
+        <h3>Baby Shower Venues</h3>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

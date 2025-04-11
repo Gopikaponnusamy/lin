@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Celebrations - LetsGala</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <section class="section">
+    <h2 class="section-title">Explore by Celebration</h2>
+    <div class="celebration-grid">
+      <div class="celebration-card">
+        <img src="{{ url_for('static', filename='images/celebration.jpg') }}" alt="Birthday">
+        <h3>Birthday Parties</h3>
+      </div>
+      <div class="celebration-card">
+        <img src="https://images.unsplash.com/photo-1548895262-3b4dbde7b4e8" alt="Wedding">
+        <h3>Weddings</h3>
+      </div>
+      <div class="celebration-card">
+        <img src="https://images.unsplash.com/photo-1589927986089-35812389fc2b" alt="Anniversary">
+        <h3>Anniversaries</h3>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

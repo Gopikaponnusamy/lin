@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LetsGala | Plan Your Perfect Event</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">Lets<span class="highlight">Gala</span></div>
+        <nav>
+            <a href="#">All Vendors</a>
+            <a href="#">Weddings</a>
+            <a href="#">Birthdays</a>
+            <a href="#">Baby Showers</a>
+            <a href="#">Corporate Events</a>
+            <a href="#">Become A Member</a>
+        </nav>
+        <div class="user-profile">
+            <a href="/profile">
+                <img src="{{ url_for('static', filename='images/user_icon.png') }}" alt="Profile">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Plan Your<br>Perfect Event<br>with LetsGala</h1>
+            <p>Connecting you with the best<br>venues, caterers, and entertainers</p>
+            <a href="#" class="start-btn">Start Planning</a>
+        </section>
+
+        <section class="venues">
+            <h2>Explore Our<br><span>FAST BOOKING VENUES</span></h2>
+            <div class="venue-cards">
+                <div class="venue-card">
+                    <img src="{{ url_for('static', filename='images/wedding.png') }}" alt="Wedding Venue">
+                    <p>Wedding Venues</p>
+                </div>
+                <div class="venue-card">
+                    <img src="{{ url_for('static', filename='images/birthday.png') }}" alt="Birthday Venue">
+                    <p>Birthday Venues</p>
+                </div>
+                <div class="venue-card">
+                    <img src="{{ url_for('static', filename='images/babyshower.png') }}" alt="Baby Shower Venue">
+                    <p>Baby Shower Venues</p>
+                </div>
+                <div class="venue-card">
+                    <img src="{{ url_for('static', filename='images/corporate.png') }}" alt="Corporate Venue">
+                    <p>Corporate Venues</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
